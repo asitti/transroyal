@@ -1,0 +1,19 @@
+doctype html
+//if IE 8
+  html.ie.ie8
+//if IE 9
+  html.ie.ie9
+// [if gt IE 9] <!
+html
+  // <![endif]
+  head
+  include meta
+  include styles
+  include scripts
+  body.smoothscroll
+    #wrapper
+      include header
+      block pagecontent
+      include footer
+    // /#wrapper
+include javascripts

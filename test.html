@@ -1,0 +1,813 @@
+
+doctype html
+//if IE 8
+//if IE 9
+// [if gt IE 9] <!
+// <![endif]
+head
+	meta(charset='utf-8')
+	title Epona - Multipurpose Template
+	meta(name='keywords', content='HTML5,CSS3,Template')
+	meta(name='description', content='')
+	meta(name='Author', content='Dorin Grigoras [www.stepofweb.com]')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge')
+	// mobile settings
+	meta(name='viewport', content='width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0')
+	// Favicon
+	link(rel='shortcut icon', href='assets/images/demo/favicon.ico')
+	// WEB FONTS
+	link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&subset=latin,latin-ext,cyrillic,cyrillic-ext', rel='stylesheet', type='text/css')
+	// CORE CSS
+	link(href='assets/plugins/bootstrap/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/font-awesome.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/sky-forms.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/weather-icons.min.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/line-icons.css', rel='stylesheet', type='text/css')
+	link(href='assets/plugins/owl-carousel/owl.pack.css', rel='stylesheet', type='text/css')
+	link(href='assets/plugins/magnific-popup/magnific-popup.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/animate.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/flexslider.css', rel='stylesheet', type='text/css')
+	// REVOLUTION SLIDER
+	link(href='assets/css/revolution-slider.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/layerslider.css', rel='stylesheet', type='text/css')
+	// THEME CSS
+	link(href='assets/css/essentials.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/layout.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/header-4.css', rel='stylesheet', type='text/css')
+	link(href='assets/css/footer-default.css', rel='stylesheet', type='text/css')
+	link#color_scheme(href='assets/css/color_scheme/red.css', rel='stylesheet', type='text/css')
+	// Morenizr
+	script(type='text/javascript', src='assets/plugins/modernizr.min.js')
+	//if lte IE 8
+		script(src='assets/plugins/respond.js')
+//
+	Available body classes:
+	smoothscroll			= enable chrome browser smooth scroll
+	grey 					= grey content background
+	boxed 					= boxed style
+	pattern1 ... pattern11 	= background pattern
+	Background Image - add to body:
+	data-background="assets/images/boxed_background/1.jpg"
+	Examples:
+	<body class="smoothscroll grey boxed pattern3">
+	<body class="smoothscroll boxed" data-background="assets/images/boxed_background/1.jpg">
+#wrapper
+	#header
+		// class="sticky" for sticky menu
+		// Top Bar
+		header#topBar
+			.container
+				.pull-left.fsize13.hide_mobile
+					.block.text-right
+						// social
+						a.social.fa.fa-facebook(href='#')
+						a.social.fa.fa-twitter(href='#')
+						a.social.fa.fa-google-plus(href='#')
+						a.social.fa.fa-linkedin(href='#')
+						a.social.fa.fa-pinterest(href='#')
+					// /social
+				#barMain
+					nav.nav-second
+						ul.nav.nav-pills.nav-second
+							li
+								a(href='#')
+									i.fa.fa-angle-right
+							li
+								a(href='#')
+									i.fa.fa-angle-right
+							li
+								a(href='#')
+									i.fa.fa-angle-right
+			// /.container
+		// /Top Bar
+		// Top Nav
+		header#topNav
+			.container
+				// Logo
+				a.logo(href='index.html')
+					img(src='assets/images/logo.png', height='50', alt='')
+				// Mobile Menu Button
+				button.btn.btn-mobile(data-toggle='collapse', data-target='.nav-main-collapse')
+					i.fa.fa-bars
+				// Search
+				form.search(method='get', action='page-search.html')
+					input.form-control(type='text', name='s', value='', placeholder='Search')
+					button.fa.fa-search
+				// /Search
+				// Top Nav
+				.navbar-collapse.nav-main-collapse.collapse
+					nav.nav-main
+						//
+							NOTE
+							For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+							Direct Link Example:
+							<li>
+							<a href="#">HOME</a>
+							</li>
+						ul#topMain.nav.nav-pills.nav-main
+							li.mega-menu.dropdown.active
+								a.dropdown-toggle(href='#')
+									span welcome
+								ul.dropdown-menu
+									li
+										.row
+											.col-md-4
+												h3 Home Samples #1
+												ul
+													li
+														a(href='index.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-2.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-3.html')
+															i.fa.fa-angle-right
+													li.active
+														a(href='index-home-4.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-5.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-6.html')
+															i.fa.fa-angle-right
+											.col-md-4
+												h3 Home Samples #2
+												ul
+													li
+														a(href='index-home-7.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-8.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-9.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-10.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-11.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-12.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-home-13.html')
+															i.fa.fa-angle-right
+															span.label.label-danger.pull-right new
+											.col-md-4
+												h3 Home Samples #3
+												ul
+													li
+														a(href='shop-home-1.html')
+															i.fa.fa-angle-right
+													li
+														a(href='portfolio-home-1.html')
+															i.fa.fa-angle-right
+													li
+														a(href='blog-home-1.html')
+															i.fa.fa-angle-right
+													li
+														a(href='magazine-home-1.html')
+															i.fa.fa-angle-right
+													li
+														a(href='onepage.html')
+															i.fa.fa-angle-right
+													li
+														a(href='index-why.html')
+															i.fa.fa-angle-right
+															b Why Choose Epona?
+							li.dropdown.mega-menu
+								a.dropdown-toggle(href='#')
+									span preview
+								ul.dropdown-menu
+									li
+										.row
+											.col-md-3
+												h3 Page Samples #1
+												ul
+													li
+														a(href='page-about-basic.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-about-us.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-about-me.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-about-team.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-services.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-careers.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-gallery.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-article.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-faq.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-clients.html')
+															span.label.label-default.pull-right new
+															i.fa.fa-angle-right
+											.col-md-3
+												h3 Page Samples #2
+												ul
+													li
+														a(href='page-timeline-centered.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-timeline-left.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-timeline-right.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-custom-header.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-invoice.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-login.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-account-settings.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-search.html')
+															span.label.label-default.pull-right new
+															i.fa.fa-angle-right
+													li
+														a(href='page-user-profile.html')
+															span.label.label-default.pull-right new
+															i.fa.fa-angle-right
+											.col-md-3
+												h3 Page Samples #3
+												ul
+													li
+														a(href='page-pricing-standard.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-pricing-expanded.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-empty.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-full.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-left-sidebar.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-right-sidebar.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-side-navigation.html')
+															i.fa.fa-angle-right
+											.col-md-3
+												h3 Page Samples #4
+												ul
+													li
+														a(href='page-maintenance.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-coming-soon.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-privacy.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-terms.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-404.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-sitemap.html')
+															i.fa.fa-angle-right
+													li
+														a(href='email.html')
+															i.fa.fa-star-o
+							li.dropdown
+								a.dropdown-toggle(href='#')
+									span components
+								ul.dropdown-menu
+									li
+										a.dropdown-toggle(href='#')
+											i.fa.fa-heart-o
+										ul.dropdown-menu
+											li
+												a(href='feature-header-transparent.html') Transparent Header
+											li
+												a(href='feature-header-translucent.html') Translucent Header
+											li
+												a(href='feature-header-below-slider.html') Header Below Slider
+											li
+												a(href='feature-header-sticky.html') Sticky Header
+											li
+												a(href='feature-header-1.html') Header #1 (default)
+											li
+												a(href='feature-header-2.html') Header #2
+											li
+												a(href='feature-header-3.html') Header #3
+											li
+												a(href='feature-header-4.html') Header #4
+											li
+												a(href='feature-header-5.html') Header #5
+									li
+										a.dropdown-toggle(href='#')
+											i.fa.fa-heart-o
+										ul.dropdown-menu
+											li
+												a(href='feature-footer-1.html#footer') Footer #1 (default)
+											li
+												a(href='feature-footer-2.html#footer') Footer #2
+											li
+												a(href='feature-footer-3.html#footer') Footer #3
+											li
+												a(href='feature-footer-4.html#footer') Footer #4
+											li
+												a(href='feature-footer-5.html#footer') Footer #5
+									li
+										a.dropdown-toggle(href='#')
+											i.fa.fa-heart
+										ul.dropdown-menu
+											li
+												a.dropdown-toggle(href='#') Revolution Slider
+												ul.dropdown-menu
+													li
+														a(href='slider-revolution-fixed-width.html') Fixed Width
+													li
+														a(href='slider-revolution-full-width.html') Full Width
+													li
+														a(href='slider-revolution-full-screen.html') Full Screen
+													li
+														a(href='slider-revolution-video-gallery.html') Video Gallery
+													li
+														a(href='slider-revolution-captions.html') Captions
+													li
+														a(href='slider-revolution-thumbnav-small.html') Thumbnails Nav - Small
+													li
+														a(href='slider-revolution-thumbnav-large.html') Thumbnails Nav - Large
+													li
+														a(href='../Documentation/Revolution_Slider/editor/00.Editor-Captions.html', target='_blank', rel='nofollow')
+															i.fa.fa-pencil-square-o
+															em Captions Editor
+													li
+														a(href='../Documentation/Revolution_Slider/editor/01.Editor-Transitions.html', target='_blank', rel='nofollow')
+															i.fa.fa-pencil-square-o
+															em Transitions Editor
+											li
+												a.dropdown-toggle(href='#') Layer Slider
+												ul.dropdown-menu
+													li
+														a(href='slider-layer-full-width.html') Full Width
+													li
+														a(href='slider-layer-fixed-width.html') Fixed Width
+													li
+														a(href='slider-layer-captions.html') Captions
+													li
+														a(href='slider-layer-video-gallery.html') Video Gallery
+													li
+														a(href='slider-layer-carousel.html') Carousel
+													li
+														a(href='slider-layer-3d-transitions.html') 2D &amp; 3D Transitions
+													li
+														a(href='slider-layer-thumbnav.html') Thumbnails Nav
+											li
+												a.dropdown-toggle(href='#') Flex Slider
+												ul.dropdown-menu
+													li
+														a(href='slider-flex-fixed-width.html') Fixed Width
+													li
+														a(href='slider-flex-full-width.html') Full Width
+													li
+														a(href='slider-flex-carousel.html') Carousel
+													li
+														a(href='slider-flex-video-gallery.html') Video Gallery
+													li
+														a(href='slider-flex-thumbnav.html') Thumbnails Nav
+											li
+												a.dropdown-toggle(href='#') OWL Carousel
+												ul.dropdown-menu
+													li
+														a(href='slider-owl-full-width.html') Full Width
+													li
+														a(href='slider-owl-fixed-width.html') Fixed Width
+													li
+														a(href='slider-owl-fixed-progress.html') Fixed Width + Progress
+													li
+														a(href='slider-owl-carousel.html') Carousel
+													li
+														a(href='slider-owl-fade.html') Effect: Fade
+													li
+														a(href='slider-owl-backslide.html') Effect: Back Slide
+													li
+														a(href='slider-owl-godown.html') Effect: Go Down
+													li
+														a(href='slider-owl-fadeup.html') Effect: Fade Up
+									li
+										a.dropdown-toggle(href='#')
+											i.fa.fa-code
+										ul.dropdown-menu
+											li
+												a(href='shortcodes-counters.html') Counters
+											li
+												a(href='shortcodes-toggles.html') Toggles
+											li
+												a(href='shortcodes-forms-bootstrap.html') Forms
+											li
+												a(href='shortcodes-tables-default.html')
+													span.label.label-warning.pull-right New
+											li
+												a(href='shortcodes-buttons-default.html') Buttons
+											li
+												a(href='shortcodes-html-editor.html')
+													span.label.label-warning.pull-right New
+											li
+												a(href='shortcodes-tabs-and-accordions.html') Tabs &amp; Accordions
+											li
+												a(href='shortcodes-callouts.html') Callouts
+											li
+												a(href='shortcodes-dividers.html') Dividers
+											li
+												a(href='shortcodes-lightbox.html') Lightbox
+											li
+												a(href='shortcodes-icons-and-boxes.html') Icons &amp; Boxes
+											li
+												a(href='shortcodes-carousel.html') Carousel
+											li
+												a(href='shortcodes-progress-bars.html') Progress Bars
+											li
+												a(href='shortcodes-alerts.html') Alerts
+											li
+												a(href='shortcodes-video.html') Video &amp; Audio
+											li
+												a(href='shortcodes-tooltips-and-popover.html') Tooltips &amp; Popovers
+											li
+												a(href='shortcodes-modals.html') Modals
+											li
+												a(href='shortcodes-thumbnails.html') Thumbnails
+											li
+												a(href='shortcodes-testimonials.html') Testimonials
+									li
+										a.dropdown-toggle(href='#') Icons
+										ul.dropdown-menu
+											li
+												a(href='feature-icons-fontawsome.html') Font Awsome
+											li
+												a(href='feature-icons-glyphicons.html') Glyphicons Icons
+											li
+												a(href='feature-icons-weather.html') Weather Icons
+											li
+												a(href='feature-icons-linecons.html') Linecons Icons
+									li
+										a.dropdown-toggle(href='#') Maps
+										ul.dropdown-menu
+											li
+												a(href='feature-maps-google.html') Google Maps
+											li
+												a(href='feature-maps-vectorial.html') Vectorial Maps
+									li
+										a(href='feature-animations.html') Animations
+									li
+										a(href='feature-grid.html') Grid System
+									li
+										a(href='feature-typography.html') Typography
+									li
+										a.dropdown-toggle(href='#')
+											b Infinite Menu
+										ul.dropdown-menu
+											li
+												a(href='#') Menu Level 2
+											li
+												a.dropdown-toggle(href='#') Menu Level 2
+												ul.dropdown-menu
+													li
+														a(href='#') Menu Level 3
+													li
+														a.dropdown-toggle(href='#') Menu Level 3
+														ul.dropdown-menu
+															li
+																a(href='#') Menu Level 4
+															li
+																a.dropdown-toggle(href='#') Menu Level 4
+																ul.dropdown-menu
+																	li
+																		a(href='#') Menu Level 5
+																	li
+																		a(href='#') ! INFINITE LEVELS !
+							li.dropdown
+								a.dropdown-toggle(href='#')
+									span projects
+								ul.dropdown-menu
+									li
+										a(href='portfolio-2-columns.html') 2 Columns
+									li
+										a(href='portfolio-3-columns.html') 3 Columns
+									li
+										a(href='portfolio-4-columns.html') 4 Columns
+									li.divider
+									li
+										a(href='portfolio-single-basic.html') Single Basic
+									li
+										a(href='portfolio-single-slider.html') Single Full Slider
+							li.dropdown
+								a.dropdown-toggle(href='#')
+									span recent news
+								ul.dropdown-menu
+									li
+										a(href='blog-sidebar-left.html') Blog Sidebar Left
+									li
+										a(href='blog-sidebar-right.html') Blog Sidebar Right
+									li
+										a(href='blog-without-sidebar.html') Blog Without Sidebar
+									li.divider
+									li
+										a(href='blog-single-sidebar.html') Blog Single With Sidebar
+									li
+										a(href='blog-single-without-sidebar.html') Blog Single Without Sidebar
+							li.dropdown.mega-menu
+								a.dropdown-toggle(href='#')
+									span our products
+								ul.dropdown-menu
+									li
+										.row
+											.col-md-4
+												h3 Shop Pages
+												ul
+													li
+														a(href='shop-page-full.html')
+															i.fa.fa-angle-right
+													li
+														a(href='shop-page-full-product.html')
+															i.fa.fa-angle-right
+													li
+														a(href='shop-page-sidebar.html')
+															i.fa.fa-angle-right
+													li
+														a(href='shop-page-sidebar-product.html')
+															i.fa.fa-angle-right
+													li
+														a(href='shop-page-cart.html')
+															i.fa.fa-angle-right
+													li
+														a(href='shop-page-checkout.html')
+															i.fa.fa-angle-right
+													li
+														a(href='shop-page-order-history.html')
+															i.fa.fa-angle-right
+													li
+														a(href='shop-page-order-history-summary.html')
+															i.fa.fa-angle-right
+													li
+														a(href='page-invoice.html')
+															i.fa.fa-angle-right
+											.col-md-4
+												h3 Shop Components
+												ul
+													li
+														a(href='shop-components-featured-slider.html')
+															i.fa.fa-certificate
+													li
+														a(href='shop-components-featured-products.html')
+															i.fa.fa-trophy
+													li
+														a(href='shop-components-product-carousel.html')
+															i.fa.fa-code
+													li
+														a(href='shop-components-product-categories.html')
+															i.fa.fa-tags
+													li
+														a(href='page-login.html')
+															i.fa.fa-user
+													li
+														a(href='page-account-settings.html')
+															i.fa.fa-key
+											.col-md-4
+												h3 Widgetized
+												img.img-responsive(src='assets/images/demo/desktop.png', alt='')
+												p Epona Megamenu can be 1-4 columns, full width, including widgetized images.
+							li.dropdown
+								a.dropdown-toggle(href='#')
+									span write us
+								ul.dropdown-menu
+									li
+										a(href='contact-1.html') Contact Version 1
+									li
+										a(href='contact-2.html') Contact Version 2
+									li
+										a(href='contact-3.html') Contact Version 3
+									li
+										a(href='contact-4.html') Contact Version 4
+									li
+										a(href='contact-5.html') Contact Version 5
+				// /Top Nav
+			// /.container
+		// /Top Nav
+	// REVOLUTION SLIDER
+	.slider.fullwidthbanner-container.roundedcorners
+		.fullwidthbanner
+			ul.hide
+				// SLIDE
+				li(data-transition='fade', data-slotamount='7', data-masterspeed='300', data-saveperformance='off')
+					img(src='assets/images/1x1.png', data-lazyload='assets/images/demo/dark.jpg', alt='', data-bgfit='cover', data-bgposition='center top', data-bgrepeat='no-repeat')
+					.tp-caption.block_black.lfb.tp-resizeme(data-x='center', data-y='80', data-speed='1000', data-start='500', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.block_huge.text-white.lfb.tp-resizeme(data-x='center', data-y='130', data-speed='1000', data-start='800', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.block_black.lfb.tp-resizeme(data-x='center', data-y='280', data-speed='1000', data-start='1200', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.lfb.tp-resizeme(data-x='center', data-y='350', data-speed='1200', data-start='2000', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+						a.btn.btn-primary(href='#purchase') PURCHASE NOW
+				// SLIDE
+				li(data-transition='fade', data-slotamount='7', data-masterspeed='300', data-saveperformance='off')
+					img(src='assets/images/1x1.png', data-lazyload='assets/images/demo/flickr_37.jpg', alt='', data-bgfit='cover', data-bgposition='center top', data-bgrepeat='no-repeat')
+					.tp-caption.mediumlarge_light_white.lfb.tp-resizeme(data-x='left', data-hoffset='70', data-y='133', data-speed='1000', data-start='1400', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.mediumlarge_light_white.lft.tp-resizeme(data-x='left', data-hoffset='70', data-y='85', data-speed='1000', data-start='1200', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.block_black.sfl.tp-resizeme(data-x='70', data-y='216', data-speed='750', data-start='1900', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.block_black.sfr.tp-resizeme(data-x='70', data-y='260', data-speed='750', data-start='2200', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+				// SLIDE
+				li(data-transition='fade', data-slotamount='7', data-masterspeed='300', data-link='http://www.stepofweb.com/', data-target='_blank', data-saveperformance='off')
+					img(src='assets/images/1x1.png', data-lazyload='assets/images/demo/flickr_9.jpg', alt='', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+					.tp-caption.block_black.sfl.tp-resizeme(data-x='70', data-y='172', data-speed='750', data-start='1000', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.block_black.sfl.tp-resizeme(data-x='70', data-y='216', data-speed='750', data-start='1400', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+					.tp-caption.block_black.sfr.tp-resizeme(data-x='70', data-y='260', data-speed='750', data-start='1800', data-easing='easeOutExpo', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='300')
+			.tp-bannertimer
+	// /REVOLUTION SLIDER
+	// WELCOME
+	section
+		.container
+			header.text-center
+				h2
+					strong Epona
+				p.lead
+				.divider.half-margins.onepage.center
+					// lines divider
+			// FEATURED BOXES 1
+			.row
+				.col-md-3
+					.featured-box.noborder
+						// add .transparent for no background color
+						i.fa.fa-user
+						h4 Beautiful &amp; Simplistic
+						p Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
+				.col-md-3
+					.featured-box.noborder
+						// add .transparent for no background color
+						i.fa.fa-book
+						h4 Great Layout Options
+						p Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
+				.col-md-3
+					.featured-box.noborder
+						// add .transparent for no background color
+						i.fa.fa-trophy
+						h4 Free Support
+						p Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
+				.col-md-3
+					.featured-box.noborder
+						// add .transparent for no background color
+						i.fa.fa-cogs
+						h4 Lifetime Update
+						p Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
+			// /FEATURED BOXES 1
+	// /WELCOME
+	// SECTION
+	section.alternate
+		.container
+			.row
+				.col-md-6.col-sm-6
+					// left image
+					// add class "controlls-over" if you need the button controlls over the image
+					.owl-carousel.controlls-over(data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": false, "transitionStyle":"fadeUp"}')
+						// transitionStyle: fade, backSlide, goDown, fadeUp,
+						div
+							img.img-responsive(alt='', src='assets/images/demo/about_1.jpg')
+						div
+							img.img-responsive(alt='', src='assets/images/demo/about_2.jpg')
+				// /left image
+				.col-md-6.col-sm-6
+					h3
+						strong Amazing
+						strong awesome
+					ul.list-icon.spaced.check-circle
+						li Fully responsive so your content will always look good on any device
+						li Cool sliders give you the opportunity to showcase your content
+						li Advanced template options to easily customize your website
+						li Multiple layout options for home pages, portfolio, shop and blog
+						li Incredible shortcodes for easy customization
+						li Free lifetime update because we care about your website as much as you
+					.margin-top20
+						// buttons
+						a.btn.btn-primary(href='#purchase', target='_blank', rel='nofollow') PURCHASE EPONA
+						a.btn.btn-default(href='index-why.html') WHY US?
+					// /buttons
+	// /SECTION
+	// SECTION
+	section
+		.container
+			header.text-center
+				h2 We Are Dedicated To Our Customers
+				p.lead
+				.divider.half-margins
+					// divider
+			.row
+				.col-md-4.col-sm-6
+					h4 Passion
+					p.dropcap
+				.col-md-4.col-sm-6
+					h4 Precision
+					p
+				.col-md-4.col-sm-12
+					// ACCORDION
+					#accordion2.accordion.panel-group.transparent
+						.panel.panel-default
+							.panel-heading
+								h4.panel-title
+									a(data-toggle='collapse', data-parent='#accordion2', href='#acordion_1')
+										i.fa.fa-plus
+							#acordion_1.collapse
+								.panel-body
+						.panel.panel-default
+							.panel-heading
+								h4.panel-title
+									a(data-toggle='collapse', data-parent='#accordion2', href='#acordion_2')
+										i.fa.fa-plus
+							#acordion_2.collapse
+								.panel-body
+						.panel.panel-default
+							.panel-heading
+								h4.panel-title
+									a(data-toggle='collapse', data-parent='#accordion2', href='#acordion_3')
+										i.fa.fa-plus
+							#acordion_3.collapse
+								.panel-body
+						.panel.panel-default
+							.panel-heading
+								h4.panel-title
+									a(data-toggle='collapse', data-parent='#accordion3', href='#acordion_4')
+										i.fa.fa-plus
+							#acordion_4.collapse
+								.panel-body
+					// /ACCORDION
+	// /SECTION
+	// FOOTER
+	footer#footer
+		.container
+			.row
+				// col #1
+				.logo_footer.col-md-8
+					img.logo(alt='', src='assets/images/logo_footer_alt.png', height='50')
+					p.block
+						strong
+							em Why Choose Us?
+						a(href='page-about-basic.html')
+							i.fa.fa-arrow-right
+					h2 (800) 123-4567
+				// /col #1
+				// col #2
+				.spaced.col-md-4
+					h4
+						strong Us
+					p
+					h4
+						small
+							strong Subscribe to our Newsletter
+					form#newsletterSubscribe.input-group(method='post', action='php/newsletter.php')
+						input#newsletter_email.form-control(required='', type='email', name='newsletter_email', value='', placeholder='E-mail Address')
+						span.input-group-btn
+							button.btn.btn-primary SUBMIT
+				// /col #2
+		hr
+		.copyright
+			.container.text-center.fsize12
+				a.copyright(href='http://www.stepofweb.com', target='_blank', title='bootstrap themes & templates') stepofweb
+				a.fsize11(href='page-privacy.html') Privacy Policy
+				a.fsize11(href='page-terms.html') Terms of Service
+	// /FOOTER
+	a#toTop(href='#')
+// /#wrapper
+// JAVASCRIPT FILES
+script(type='text/javascript', src='assets/plugins/jquery-2.1.4.min.js')
+script(type='text/javascript', src='assets/plugins/jquery.isotope.js')
+script(type='text/javascript', src='assets/plugins/masonry.js')
+script(type='text/javascript', src='assets/plugins/bootstrap/js/bootstrap.min.js')
+script(type='text/javascript', src='assets/plugins/magnific-popup/jquery.magnific-popup.min.js')
+script(type='text/javascript', src='assets/plugins/owl-carousel/owl.carousel.min.js')
+script(type='text/javascript', src='assets/plugins/knob/js/jquery.knob.js')
+script(type='text/javascript', src='assets/plugins/flexslider/jquery.flexslider-min.js')
+// REVOLUTION SLIDER
+script(type='text/javascript', src='assets/plugins/revolution-slider/js/jquery.themepunch.tools.min.js')
+script(type='text/javascript', src='assets/plugins/revolution-slider/js/jquery.themepunch.revolution.min.js')
+script(type='text/javascript', src='assets/js/revolution_slider.js')
+script(type='text/javascript', src='assets/js/scripts.js')
+script(type='text/javascript', src='assets/plugins/styleswitcher/styleswitcher.js')
+	/** REMOVE ON PRODUCTION **/

@@ -1,0 +1,137 @@
+include indexslides
+// WELCOME
+section
+  .container
+    header.text-center
+      h2 Ihr Partner für internationale Verbindungen.
+      p.lead
+      | Wer in Zukunft seine Geschäfte erweitern möchte, muss international denken. Trans-Royal GmbH
+      | ist ein Dienstleistungsunternehmen für internationale Verbindungen.
+    // FEATURED BOXES 1
+    .row     
+      .col-md-3
+        .featured-box.noborder
+          // add .transparent for no background color
+          i.fa.fa-university
+          p.fsize16 
+            | INTERNATIONALES
+            br
+            | 	CONSULTING     
+      .col-md-3
+        .featured-box.noborder
+          // add .transparent for no background color
+          i.fa.fa-medkit
+          p.fsize16 
+            | MEDICAL
+            br            
+            | &nbsp         
+      .col-md-3
+        .featured-box.noborder
+          // add .transparent for no background color
+          i.fa.fa-users
+          p.fsize16 
+            | PERSONAL & 
+            br          
+            | RECRUITMENT     
+      .col-md-3
+        .featured-box.noborder
+          // add .transparent for no backgrounfont color
+          i.fa.fa-exchange
+          p.fsize16 
+            | ÜBERSETZUNG
+            br
+            | &nbsp          
+    // /FEATURED BOXES 1            
+// /WELCOME
+// SECTION
+section.alternate
+  .container
+    .row
+      .col-md-6.col-sm-6
+        // left image
+        // add class "controlls-over" if you need the button controlls over the image
+        .owl-carousel.controlls-over(data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": false, "transitionStyle":"fadeUp"}')
+          // transitionStyle: fade, backSlide, goDown, fadeUp,
+          div
+            img.img-responsive(alt='', src='assets/images/demo/about_1.jpg')
+          div
+            img.img-responsive(alt='', src='assets/images/demo/about_2.jpg')
+      // /left image
+      .col-md-6.col-sm-6
+        h3
+          strong Amazing
+          |  tools to build
+          strong awesome
+          |  websites
+        ul.list-icon.spaced.check-circle
+          li Fully responsive so your content will always look good on any device
+          li Cool sliders give you the opportunity to showcase your content
+          li Advanced template options to easily customize your website
+          li Multiple layout options for home pages, portfolio, shop and blog
+          li Incredible shortcodes for easy customization
+          li Free lifetime update because we care about your website as much as you
+        .margin-top20
+          // buttons
+          a.btn.btn-primary(href='#purchase', target='_blank', rel='nofollow') PURCHASE EPONA
+          a.btn.btn-default(href='index-why.html') WHY US?
+        // /buttons
+// /SECTION
+// SECTION
+section
+  .container
+    header.text-center
+      h2 We Are Dedicated To Our Customers
+      p.lead
+        | We thrive on making Epona the most complete and trusted template on wrapbootstrap
+      .divider.half-margins
+        // divider
+    .row
+      .col-md-4.col-sm-6
+        h4 Passion
+        p.dropcap
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et elementum erat, biluctus mi. Quisque consequat risus quis tincidunt fringilla. Ut sed rhoncus metus, in rhoncus dolor. Integer tempor ligula est, sed luctus metus tempus a. Pellentesque tempor libero et arcu bibendum mollis. Aliquam eu odio eget diam egestas euismod vel sed orc aenean.
+      .col-md-4.col-sm-6
+        h4 Precision
+        p
+          | Pellentesque tempor libero et arcu bibendum mollis. Donec eu porta elit. Aliquam porta sollicitudin ante, ac fermentum orci mattis et. Phasellus ac nibh eleifend, sagittis purus nec, elementum massa. Quisque tincidunt sapien a sem porttitor, id convallis dolor pharetra. Donec tempor cursus facilisis. Ut eu elementum arcu, vel hendrerit nisi. Cras sed euismod nibh, a adipiscing.
+      .col-md-4.col-sm-12
+        // ACCORDION
+        #accordion2.accordion.panel-group.transparent
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a(data-toggle='collapse', data-parent='#accordion2', href='#acordion_1')
+                  i.fa.fa-plus
+                  | 												Our Company Mission
+            #acordion_1.collapse
+              .panel-body
+                | Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a(data-toggle='collapse', data-parent='#accordion2', href='#acordion_2')
+                  i.fa.fa-plus
+                  | 												The Epona Inside
+            #acordion_2.collapse
+              .panel-body
+                | Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a(data-toggle='collapse', data-parent='#accordion2', href='#acordion_3')
+                  i.fa.fa-plus
+                  | 												The Epona Philosophy
+            #acordion_3.collapse
+              .panel-body
+                | Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title
+                a(data-toggle='collapse', data-parent='#accordion3', href='#acordion_4')
+                  i.fa.fa-plus
+                  | 												Join our great team
+            #acordion_4.collapse
+              .panel-body
+                | Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+        // /ACCORDION
+      // /SECTION
