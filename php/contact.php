@@ -37,6 +37,7 @@
 		$m->IsSMTP();
 		$m->SMTPDebug  	= false;					// enables SMTP debug information (for testing) [default: 2]
 		$m->SMTPAuth   	= true;						// enable SMTP authentication
+    $m->SMTPSecure = "tls";
 		$m->Host       	= $config['smtp_host']; 	// sets the SMTP server
 		$m->Port       	= $config['smtp_port'];		// set the SMTP port for the GMAIL server
 		$m->Username   	= $config['smtp_user'];		// SMTP account username

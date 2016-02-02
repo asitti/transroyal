@@ -98,39 +98,73 @@
         </header>
         <!-- /Top Nav-->
       </div>
-      <!-- SECTION-->
+      <!-- CONTENT-->
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-sm-12 margin-top40">
-              <h2><strong>Trans Royal ist exklusiver Vertriebspartner von Quractiv&reg Derm in der Region MENA, Türkei, Indien und Malaysia</strong></h2>
+            <!-- FORM-->
+            <div class="col-md-8">
+              <h3><strong><em>Kontakt</em></strong></h3>
+              <form id="contactForm" action="php/contact.php" method="post">
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label>Name *</label>
+                      <input id="contact_name" required="" type="text" value="" data-msg-required="Mussfeld!" maxlength="100" name="contact_name" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                      <label>E-mail *</label>
+                      <input id="contact_email" required="" type="email" value="" data-msg-required="Mussfeld!" data-msg-email="Bitte geben Sie eine gültige E-mail an." maxlength="100" name="contact_email" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label>Betreff *</label>
+                      <input id="contact_subject" type="text" value="" data-msg-required="Mussfeld!" maxlength="100" name="contact_subject" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label>Nachricht *</label>
+                      <textarea id="contact_comment" required="" maxlength="5000" data-msg-required="Mussfeld!" rows="10" name="contact_comment" class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div><br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <input id="captcha" type="text" name="captcha" value="" class="hidden">
+                    <!-- keep it hidden-->
+                    <input id="contact_submit" type="submit" value="Senden" class="btn btn-primary btn-lg">
+                  </div>
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="embed-responsive embed-responsive-16by9">
-                <video width="800" height="450" controls="">
-                  <source src="assets/videos/quractiv.mp4" type="video/mp4">
-                </video>
+            <!-- /FORM-->
+            <!-- INFO-->
+            <div class="col-md-4">
+              <h2>Besuchen Sie Uns</h2>
+              <div id="gmap" class="grayscale">
+                <!-- google map-->
               </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <h3><strong>Quractiv&reg Derm ein Wundspray mit unzähligen Anwendungsbereichen</strong></h3>
-              <ul class="list-icon spaced check-circle">
-                <li><strong><a href="http://www.quractiv.com/was-ist-quractiv-derm/" target="_blank">Was ist Quractiv&reg?</a></strong></li>
-                <li><strong><a href="http://www.quractiv.com/quractiv-nutzer/" target="_blank">Quractive&reg Nutzer</a></strong></li>
-                <li><strong><a href="http://www.quractiv.com/erfolgsgeschichten/" target="_blank">Erfolgsgeschichten</a></strong></li>
-                <li><strong><a href="http://www.quractiv.com/studien/" target="_blank">Studien</a></strong></li>
-              </ul>
-              <div class="padding-left100">
-                <!-- buttons--><a href="http://www.quractiv.com" target="_blank" rel="nofollow" class="btn btn-primary">Mehr über Quractiv&reg Derm</a>
-                <!-- /buttons-->
+              <script type="text/javascript">
+                var $googlemap_latitude     = 48.87345,
+                $googlemap_longitude    = 12.57702,
+                $googlemap_zoom         = 13;
+              </script>
+              <div class="divider white half-margins">
+                <!-- divider-->
               </div>
+              <p class="nomargin-bottom"><span class="block"><strong><i class="fa fa-map-marker padding-right10"></i>Äussere Frühlingsstr. 28, DE-94315 Straubing</strong></span><span class="block"><strong><i class="fa fa-envelope"></i></strong><a href="mailto:info@trans-royal.de" class="padding-left10">info@trans-royal.de</a></span></p>
             </div>
+            <!-- /INFO-->
           </div>
         </div>
       </section>
-      <!-- /SECTION-->
+      <!-- /CONTENT-->
       <!-- FOOTER-->
       <footer id="footer">
         <div class="container">
@@ -138,6 +172,7 @@
             <!-- col #1-->
             <div class="logo_footer col-md-8"><img alt="" src="assets/images/logo_footer_alt.png" height="80" class="logo">
               <p><strong><i class="fa fa-map-marker padding-right10"></i>Äussere Frühlingsstr. 28, DE-94315 Straubing</strong></p>
+              <h2><a href="tel:+4917180587223" class="padding-left10">+49 171 80 58 72 23</a></h2>
             </div>
             <!-- /col #1-->
             <!-- col #2-->

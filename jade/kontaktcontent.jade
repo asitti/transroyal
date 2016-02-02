@@ -1,0 +1,58 @@
+
+// CONTENT
+section
+    .container
+        .row
+            // FORM
+            .col-md-8
+                h3
+                    strong
+                        em Kontakt
+                form#contactForm(action='php/contact.php', method='post')
+                    .row
+                        .form-group
+                            .col-md-6
+                                label Name *
+                                input#contact_name.form-control(required='', type='text', value='', data-msg-required='Mussfeld!', maxlength='100', name='contact_name')
+                            .col-md-6
+                                label E-mail *
+                                input#contact_email.form-control(required='', type='email', value='', data-msg-required='Mussfeld!', data-msg-email='Bitte geben Sie eine gültige E-mail an.', maxlength='100', name='contact_email')
+                    .row
+                        .form-group
+                            .col-md-12
+                                label Betreff *
+                                input#contact_subject.form-control(type='text', value='', data-msg-required='Mussfeld!', maxlength='100', name='contact_subject')
+                    .row
+                        .form-group
+                            .col-md-12
+                                label Nachricht *
+                                textarea#contact_comment.form-control(required='', maxlength='5000', data-msg-required='Mussfeld!', rows='10', name='contact_comment')
+                    br
+                    .row
+                        .col-md-12
+                            input#captcha.hidden(type='text', name='captcha', value='')
+                            // keep it hidden
+                            input#contact_submit.btn.btn-primary.btn-lg(type='submit', value='Senden')
+            // /FORM
+            // INFO
+            .col-md-4
+                h2 Besuchen Sie Uns
+                #gmap.grayscale
+                    // google map
+                script(type='text/javascript').
+                    var $googlemap_latitude     = 48.87345,
+                    $googlemap_longitude    = 12.57702,
+                    $googlemap_zoom         = 13;
+                .divider.white.half-margins
+                    // divider
+                p.nomargin-bottom
+                    span.block
+                        strong
+                            i.fa.fa-map-marker.padding-right10
+                            | Äussere Frühlingsstr. 28, DE-94315 Straubing
+                    span.block
+                        strong
+                            i.fa.fa-envelope
+                        a.padding-left10(href='mailto:info@trans-royal.de') info@trans-royal.de
+            // /INFO
+// /CONTENT

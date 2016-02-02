@@ -3,67 +3,51 @@ header#topNav
     .container
         // Logo
         a.logo.padding-bottom10(href='index.html')
-            img(src='assets/images/logo.png', height='60', alt='') 
+            img(src='assets/images/logo.png', height='60', alt='')
         // Mobile Menu Button
         button.btn.btn-mobile(data-toggle='collapse', data-target='.nav-main-collapse')
             i.fa.fa-bars
-        // Search
-        form.search(method='get', action='page-search.html')
-            input.form-control(type='text', name='s', value='', placeholder='Search')
-            button.fa.fa-search
-        // /Search
         // Top Nav
         .navbar-collapse.nav-main-collapse.collapse
             nav.nav-main
                 //
                   NOTE
-                  For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+                  For a regular link, remove 'dropdown' class from LI tag and 'dropdown-toggle' class from the href.
                   Direct Link Example:
                   <li>
-                  <a href="#">HOME</a>
+                  <a href='#'>HOME</a>
                   </li>
                 ul#topMain.nav.nav-pills.nav-main
-                    li.mega-menu.dropdown.active
-                        a.dropdown-toggle(href='#')
+                    li.mega-menu.dropdown
+                        a.dropdown-toggle(href='index.html')
                             | STARTSEITE
                     li.dropdown.mega-menu
-                        a.dropdown-toggle(href='#')
+                        a.dropdown-toggle(href='aboutus.html')
                             | ÜBER UNS
                     li.dropdown
-                        a.dropdown-toggle(href='#')
-                            | INTERNATIONALES CONSULTING
+                        a.dropdown-toggle(href='intberatung.html')
+                            | INTERNATIONALE BERATUNG
                     li.dropdown
-                        a.dropdown-toggle(href='#')
+                        a.dropdown-toggle(href='medical.html',target='_self')
                             | MEDICAL
                         ul.dropdown-menu
                             li
-                                a(href='quractivderm.html') Was ist Quractiv&reg?
+                                a(href='http://www.quractiv.com/was-ist-quractiv-derm/',target='_blank') Was ist Quractiv&reg?
                             li
-                                a(href='quractivnutzer.html') Quractiv&reg Nutzer
+                                a(href='http://www.quractiv.com/quractiv-nutzer/',target='_blank') Quractiv&reg Nutzer
                             li
-                                a(href='quractiverfolge.html') Erfolgsgeschichten
+                                a(href='http://www.quractiv.com/erfolgsgeschichten/',target='_blank') Erfolgsgeschichten
                             li
-                                a(href='quractivstudien.html') Studien
+                                a(href='http://www.quractiv.com/studien/',target='_blank') Studien
                     li.dropdown
-                        a.dropdown-toggle(href='#')
+                        a.dropdown-toggle(href='zakoop.html',target='_self')
                             | PERSONAL & RECRUITMENT
                     li.dropdown
-                        a.dropdown-toggle(href='#')
+                        a.dropdown-toggle(href='translation.html')
                             | ÜBERSETZUNG
                     li.dropdown
-                        a.dropdown-toggle(href='#')
+                        a.dropdown-toggle(href='kontakt.html')
                             | KONTAKT
-                        ul.dropdown-menu
-                            li
-                                a(href='contact-1.html') Contact Version 1
-                            li
-                                a(href='contact-2.html') Contact Version 2
-                            li
-                                a(href='contact-3.html') Contact Version 3
-                            li
-                                a(href='contact-4.html') Contact Version 4
-                            li
-                                a(href='contact-5.html') Contact Version 5
         // /Top Nav
     // /.container
 // /Top Nav
